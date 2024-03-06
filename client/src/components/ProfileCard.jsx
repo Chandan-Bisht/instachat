@@ -4,7 +4,7 @@ import { NoProfile } from "../assets";
 import moment from "moment";
 import { UpdateProfile } from "../redux/userSlice";
 import { LiaEditSolid } from "react-icons/lia";
-import { BsBriefcase, BsPersonFillAdd } from "react-icons/bs";
+import { BsBriefcase, BsFacebook, BsInstagram, BsLinkedin, BsPersonFillAdd } from "react-icons/bs";
 import { CiLocationOn } from "react-icons/ci";
 
 const ProfileCard = ({ user }) => {
@@ -74,11 +74,24 @@ const ProfileCard = ({ user }) => {
             </span>
           </div>
         </div>
+        <div className="w-full flex flex-col gap-4 py-4 pb-6">
+          <p className="text-ascent-1 text-lg font-semibold">Social Profile</p>
+          <div className="flex gap-2 items-center text-ascent-2">
+            <BsFacebook className="text-xl text-ascent-1" />
+            <span>Facebook</span>
+          </div>
+          <div className="flex gap-2 items-center text-ascent-2">
+            <BsInstagram className="text-xl text-ascent-1" />
+            <span>Instagram</span>
+          </div>
+          <div className="flex gap-2 items-center text-ascent-2">
+            <BsLinkedin className="text-xl text-ascent-1" />
+            <span>LinkedIn</span>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 
 export default ProfileCard;
-
-// 1:52:00
